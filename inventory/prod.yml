@@ -1,0 +1,24 @@
+---
+clickhouse:
+  hosts:
+    clickhouse-01:
+      ansible_connection: ssh
+      ansible_ssh_user: ilko
+      ansible_host: 130.193.59.254
+      ansible_private_key_file: ~/.ssh/id_rsa
+
+vector:
+  hosts:
+    vector-01:
+      ansible_connection: ssh
+      ansible_ssh_user: ilko
+      ansible_host: 84.201.151.159
+      ansible_private_key_file: ~/.ssh/id_rsa
+
+lighthouse:
+  hosts:
+    lighthouse-01:
+        ansible_connection: ssh
+        ansible_ssh_user: ilko
+        ansible_host: 130.193.57.230
+        ansible_private_key_file: ~/.ssh/id_rsa
